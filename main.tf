@@ -7,9 +7,9 @@ resource "aws_vpc" "main_V" {
 }
 
 resource "aws_subnet" "prv_1" {
-  vpc_id                  = aws_vpc.main_V.id
-  cidr_block              = "20.0.0.0/22"
-  availability_zone       = "eu-west-2a"
+  vpc_id            = aws_vpc.main_V.id
+  cidr_block        = "20.0.0.0/22"
+  availability_zone = "eu-west-2a"
   # map_public_ip_on_launch = true
 
   tags = {
